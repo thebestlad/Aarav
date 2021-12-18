@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg">
+    <title>Facebook Modal</title>
+    <style>
+        .show-btn{
+    text-align: center;
+    color: white;
+    background-color: #42b72a;
+    border: none;
+    border-radius: 6px;
+    height: 50px;
+    width: 220px;
+    font-weight: 500;
+    font-size: large;
+    position: absolute;
+    top: 300px;
+    left: 630px;
+}
+.show-btn:hover{
+    background-color: rgb(82, 169, 21);
+}
+.show-btn:active{
+    transform: scale(0.97);
+}
+
+        .name{
+            width: 170px;
+            border-radius: 5px;
+            padding: 11px;
+            height: 16px;
+           
+border: rgb(204, 208, 213);
+color: black;
+        }
+        .box{
+            background-color: #fff;
+    border-radius: 0 0 8px 8px;
+    border-top: 1px solid #dadde1;
+    box-sizing: border-box;
+    padding: 16px;
+    position: relative;
+    width: 432px;
+    background: transparent;
+    border-radius: 8px;
+    bottom: -150px;
+    left: 500px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    display: none;
+
+
+        }
+        .second{
+            width: 375px;
+            padding: 11px;
+            border: 1px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .myp1{
+            width: 400px;
+            height: 20px;
+            color: rgb(96, 103, 112);
+       
+        }
+        input{
+           background-color: #E5E7E9;
+            
+        }
+.select1{
+    width: 95px;
+    height: 34px;
+    padding-left: 8px;
+    padding-right: 20px;
+    border: 1px, solid, gainsboro;
+    border-radius: 3px;
+}
+.myp2{
+    color: rgb(119, 119, 119);
+    width: 399px;
+    height: 28px;
+    font-size: 10px;
+}
+.chr{
+    background: none;
+    background-color: #00a400;
+    border: none;
+    border-radius: 6px;
+    box-shadow: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    height: 36px;
+    overflow: hidden;
+    padding: 0 32px;
+    text-shadow: none;
+}
+body{
+    height: 100vh;
+    justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+img{
+    position: absolute;
+    top: 10px;
+    left: 368px;
+}
+    </style>
+</head>
+<body>
+<button onclick="showdiv()" class="show-btn">Create Account</button>
+    <div class="box">
+    <h1>Sign Up</h1>
+    <br>
+    <p style="color: #6F767E; margin-top: -30px;">It's quick and easy</p>
+    <hr>
+    <input type="text" placeholder="First name" class="name">
+    <input type="text" placeholder="Last name" class="name">
+    <br>
+    <input type="text" placeholder="Mobile number or email" class="second">
+    <br>
+    <input type="text" placeholder="New Password" class="second">
+    <br>
+    <p class="myp1">Birthday</p>
+  <select class="select1">
+      <option>Jan</option>
+      <option>Feb</option>
+      <option>March</option>
+      <option>April</option>
+      <option>May</option>
+      <option>June</option>
+      <option>July</option>
+      <option>August</option>
+      <option>Sep</option>
+      <option>Oct</option>
+      <option>Nov</option>
+      <option>Dec</option>
+  </select>
+  <select class="select1">
+      <option>1</option> <option>2</option> <option>3</option> <option>4</option> <option>5</option> <option>6</option> <option>7</option> <option>8</option> <option>9</option> <option>10</option> 
+  </select>
+  <select class="select1">
+    <option>2021</option> <option>2020</option> <option>2019</option> <option>2018</option> <option>2017</option> <option>2016</option> <option>2015</option> <option>2014</option> <option>2013</option> <option>2012</option> 
+</select>
+<p class="myp2">By clicking Sign Up, you agree to our Terms, Data Policy and Cookies Policy. <br>You may receive SMS Notifications from us and can opt out any time.</p>
+<button class="chr">Sign Up</button>
+<img src="https://static.xx.fbcdn.net/rsrc.php/v3/yX/r/TdCEremeWv5.png" onclick="hidediv()">
+</div>
+<script>
+function showdiv(){
+    document.querySelector(".show-btn").style.display='none';
+    document.querySelector(".box").style.display='block';
+}
+function hidediv(){
+    document.querySelector(".show-btn").style.display='block';
+    document.querySelector(".box").style.display='none';
+}
+</script>
+</body>
+</html>
